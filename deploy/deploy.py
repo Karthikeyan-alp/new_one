@@ -31,4 +31,4 @@ deployed_model = model.deploy(
     machine_type="n1-standard-2"
 )
 
-print("Model deployed to endpointss:", endpoint.resource_name)
+print("Model deployed to endpoint:", endpoint.resource_name)
