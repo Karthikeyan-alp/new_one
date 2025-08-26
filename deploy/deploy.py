@@ -9,18 +9,26 @@ ENDPOINT_DISPLAY_NAME = "iris-endpoint"
 
 aiplatform.init(project=PROJECT_ID, location=REGION, staging_bucket=BUCKET)
 
-# Upload model from pickle using prebuilt sklearn container
+# Upload model
 model = aiplatform.Model.upload(
-    display_name=MODEL_DISPLAY_NAME,
+    display_name="iris-model",
     artifact_uri=f"gs://{BUCKET}/models/",
-    serving_container_image_uri="us-docker.pkg.dev/vertex-ai/prediction/sklearn-cpu.1-5:latest",
+    serving_container_image_uri="us-docker.pkg.dev/vertex-ai/prediction/sklearn-cpu.1-0:latest",
 )
 
-# Deploy model
-endpoint = model.deploy(
-    deployed_model_display_name="iris-deployed",
-    endpoint_display_name=ENDPOINT_DISPLAY_NAME,
-    machine_type="n1-standard-2",
+print("Model uploaded:", model.resource_name)
+
+# Create endpoint
+endpoint = aiplatform.Endpoint.create(
+    display_name="iris-endpoint"
 )
 
-print("✅ Modes deployed at endpoint:", endpoint.resource_name)
+print("Endpoint created:", endpoint.resource_name)
+
+# Deploy model to endpoint
+deployed_model = model.deploy(
+    endpoint=endpoint,
+    machine_type="n1-standard-2"
+)
+
+print("Model deployed to endpoint:", endpoint.resource_name)
