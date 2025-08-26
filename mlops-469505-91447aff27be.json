@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mlops-469505",
+  "private_key_id": "91447aff27be7869f673c3f4ef727727afc6b83b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1Vm4WwugbwEd+\nOYXeq3sD9YlypSHAGMzJ2EXlRFx/EoOMgyCSx3D6SaqLokO3Ha/AOJd2/B+evAc+\nZz69BJ+/rBsuo6/mXPJrXYQynlRqdDf3tYo+wJWxU24dU/qFolxP/uqUBk2gHo3t\nRmJGKZHmlMRog/Bhs+N0v0xoMvPJPrSgzJOz/4sxCYVyBIzE2vyrkUmpsmfMxUp7\ng1Cokfadv4xB8MAFILU05JtaPmS7cEAahoc6GOBjfcWbA36IWdmnYDCoVwCsi2p8\nGZqlX2wwV8qMzLgCmtaPKscBsOS6FvfK5wlJqzrJ2dDDvMAfKYGg5f/7vH+63nOO\n9vCb132FAgMBAAECggEAApxvp1+VF1k0blUxCpzDf7IYZuXeejVL4ELUoXwo13eS\ncgKCrzpfSRX9y6xBd1szvaZ9n9ak3z9BMh0rIm5KR+iYLPAUcf0NTI3N1StsdxVH\nUlzIfyYnbE88OwCLj0MK5ef7brg3LpgMs8mbU/v4lYO3iZ26Egi/Z13zIV5NHlev\nkIH51PvtBKFk2Zb94rKLVWHx1S4YcCyWkBpkv2DCF5QyP9QqL1982BSSmbrzn4zf\ngkMttFQOIvk4uIIjUMIVLiP3JaHWkgRAmNnCVgYrwNviK79ZQawJESWceUzZMwWi\nE7lj0lBmPK0nubknNqO7EEVV9WD0F8/v6CZDGvRzvQKBgQDu92J/Mlj4+Qi57syt\nk5DzSWmnHlqQfX9eVK0PQO2kCx4RJevomVYdXVqOwU+Km9PoU50VZAXmnyMrbLEw\nQtmMFp2XMDuHZJCWPVp7FG/8RpEv7L7li6+dwNf7GdUjGXdMg5K8DfA3x3bkRKpj\nR25ikLo3lOWtZW7bef7v5Zo4nwKBgQDCQ3JOqYEiNYpLj+vIq4VZQCtIt09xxubG\nEznbSKs/lP58o9Gn5CYL+j2iWnqOkiNVwDbzMNaI0LxYyOZ5QLDhFRs7FOmX4pF+\n2ov7LsZDO+RYtpw+hQlnsDU9PDrubJU+N3ffWpjFaF9g6NB1UHd4xEjWlfnHi8ZM\nu31+tXSDWwKBgAkEasIT+0mB1DN38F9IZzrW9VaqDY7QPYMovNMLhyweg0bwYGOJ\njbdT83vZjY/Ua32j0hShjptyO9iCpHkGvMDNharT1hs4zz/sFsL4NXWWkBn33Ag7\naigQw9Wk1ucZKehIOrw/5mWkcDcS5D8UzfSIM46vXq9ZWYKMqvMQfe5PAoGAKpnn\n42BAtWPQZCm3p1YV9DCiTVwFzAm2ahGlSnVxOIxQEr1KKOtbfJzwDz6QSdu6a/+v\nDT3UjkRYSZAlGsoZAANE6Xv4jhpdldgPgpILYIst1FaXhQ5ftaFqy3b95XNidzZq\nz0xq3D+7SuFDdbajvJQu9QAGur/oSMOFDdh1KKkCgYEAy51CQEV8fraYDoe5oJHo\n//zqmj/ybM/zTUn1x3XftUfRS2ajkg802yAxjwdg5eLe72PL9TFQx3Rt27QnB3AH\nFicPPAWnuK0K4p6kkM4x2HTxm15C6eQO4EAUt0hJGEDT+1D6MpuLFcNzh3vE8psf\ncd7UmMaWDSvPoeTACyYygoI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-vertex-deployer@mlops-469505.iam.gserviceaccount.com",
+  "client_id": "104878144295713739339",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-vertex-deployer%40mlops-469505.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
