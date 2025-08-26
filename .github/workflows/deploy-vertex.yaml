@@ -1,6 +1,15 @@
+name: Deploy to Vertex AI
+
+on:
+  push:
+    branches:
+      - main   # Runs only when you push to main branch
+  workflow_dispatch:   # Allows manual trigger from GitHub Actions tab
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -10,19 +19,18 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v1
-        with:
-          credentials_json: ${{ secrets.GOOGLE_CLOUD_CREDENTIALS }}
-
       - name: Install dependencies
         run: |
           python -m venv venv
           source venv/bin/activate
-          pip install --upgrade pip
           pip install -r deploy/requirements.txt
 
-      - name: Deploy to Vertex AI
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GOOGLE_CLOUD_CREDENTIALS }}
+
+      - name: Deploy model
         run: |
           source venv/bin/activate
           python deploy/deploy.py
